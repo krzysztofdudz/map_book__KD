@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a705809a07d615f948a69bc6426de5b8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a705809a07d615f948a69bc6426de5b8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a705809a07d615f948a69bc6426de5b8 = L.map(
+                "map_a705809a07d615f948a69bc6426de5b8",
+                {
+                    center: [52.23, 21.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7bd4aee2345afccf9eb0a31b83ef2698 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_7bd4aee2345afccf9eb0a31b83ef2698.addTo(map_a705809a07d615f948a69bc6426de5b8);
+        
+    
+            var marker_ccffd3989744372c9691579da3d081ed = L.marker(
+                [51.776667, 19.454722],
+                {
+}
+            ).addTo(map_a705809a07d615f948a69bc6426de5b8);
+        
+    
+        var popup_efe45605e40439faf63f191fd35676ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b073fb997cd12ad31c7395dc8d666213 = $(`<div id="html_b073fb997cd12ad31c7395dc8d666213" style="width: 100.0%; height: 100.0%;">Twój znajomy Maciej, <br/> miejscowość: Łódź <br/> opublikował 100 postów</div>`)[0];
+                popup_efe45605e40439faf63f191fd35676ab.setContent(html_b073fb997cd12ad31c7395dc8d666213);
+            
+        
+
+        marker_ccffd3989744372c9691579da3d081ed.bindPopup(popup_efe45605e40439faf63f191fd35676ab)
+        ;
+
+        
+    
+    
+            var marker_ce6149730ca04e0b25d4a5a664e371a7 = L.marker(
+                [52.408333, 16.934167],
+                {
+}
+            ).addTo(map_a705809a07d615f948a69bc6426de5b8);
+        
+    
+        var popup_c3cae23f2c2b3b6a508a4722f81a3d05 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_959136c17564732a15deae1265ebb08b = $(`<div id="html_959136c17564732a15deae1265ebb08b" style="width: 100.0%; height: 100.0%;">Twój znajomy Mateusz, <br/> miejscowość: Poznań <br/> opublikował 200 postów</div>`)[0];
+                popup_c3cae23f2c2b3b6a508a4722f81a3d05.setContent(html_959136c17564732a15deae1265ebb08b);
+            
+        
+
+        marker_ce6149730ca04e0b25d4a5a664e371a7.bindPopup(popup_c3cae23f2c2b3b6a508a4722f81a3d05)
+        ;
+
+        
+    
+    
+            var marker_ff807683d36dd45a24d3864dfad50849 = L.marker(
+                [52.166667, 22.275],
+                {
+}
+            ).addTo(map_a705809a07d615f948a69bc6426de5b8);
+        
+    
+        var popup_70bb2768a90bf398705cf92846255918 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e6a51f6cf051fb3db3a0f3f59294e34a = $(`<div id="html_e6a51f6cf051fb3db3a0f3f59294e34a" style="width: 100.0%; height: 100.0%;">Twój znajomy Maciej01, <br/> miejscowość: Siedlce <br/> opublikował 300 postów</div>`)[0];
+                popup_70bb2768a90bf398705cf92846255918.setContent(html_e6a51f6cf051fb3db3a0f3f59294e34a);
+            
+        
+
+        marker_ff807683d36dd45a24d3864dfad50849.bindPopup(popup_70bb2768a90bf398705cf92846255918)
+        ;
+
+        
+    
+    
+            var marker_6ddc6be4ecf2ef4ad9455157be8a3e93 = L.marker(
+                [53.486944, 18.756944],
+                {
+}
+            ).addTo(map_a705809a07d615f948a69bc6426de5b8);
+        
+    
+        var popup_2132e568dcaf4a6e441c4d71542ce864 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f5e8a32f7ebf8acc0abaa7320d77a95 = $(`<div id="html_2f5e8a32f7ebf8acc0abaa7320d77a95" style="width: 100.0%; height: 100.0%;">Twój znajomy Konrad, <br/> miejscowość: Grudziądz <br/> opublikował 400 postów</div>`)[0];
+                popup_2132e568dcaf4a6e441c4d71542ce864.setContent(html_2f5e8a32f7ebf8acc0abaa7320d77a95);
+            
+        
+
+        marker_6ddc6be4ecf2ef4ad9455157be8a3e93.bindPopup(popup_2132e568dcaf4a6e441c4d71542ce864)
+        ;
+
+        
+    
+</script>
+</html>
