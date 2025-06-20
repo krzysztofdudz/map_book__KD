@@ -1,23 +1,18 @@
-import requests
-from bs4 import BeautifulSoup
+class User:
+    def __init__(self, name: str, surname: str, location: str, posts: str,):
+        self.name=name
+        self.surname=surname
+        self.location=location
+        self.posts=posts
+        self.coordinates=self.get_coordinates()
 
+    def get_coordinates(self) -> list:
+        import requests
+        from bs4 import BeautifulSoup
 
-def get_coordinates(city: str) -> list:
-    url = f'https://pl.wikipedia.org/wiki/{city}'
-    response = requests.get(url).text
-    response.html = BeautifulSoup(response, 'html.parser')
-    longitude = float(response_html.select('.longitude')[1].text.replace(',', '.'))
-    latitude = float(response_html.select('.latitude')[1].text.replace(',', '.'))
-    return [longitude, latitude]
-
-def get_map(users_data: list) -> None:
-    map = folium.Map(location=(52.23, 21.00), zoom_start=6)
-    for user in users_data:
-        coordinates = get_coordinates(user['location'])
-
-        folium.Marker(
-            location=coordinates[0], coordinates[1]),
-            popup=f"Twój znajomy {user['name']}, br/> miejscowosc: {user['location']} opublikował {user['posts']} postów").add_to(map)
-
-        map.save('mapa.html')
-
+        url = f'https://pl.wikipedia.org/wiki/{self.location}'
+        response = requests.get(url).text
+        response_html = BeautifulSoup(response, 'html.parser')
+        longitude = float(response_html.select('.longitude')[1].text.replace(',', '.'))
+        latitude = float(response_html.select('.latitude')[1].text.replace(',', '.'))
+        return [latitude, longitude]
